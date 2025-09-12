@@ -1,0 +1,32 @@
+[
+  {
+    "diagnosiscode": "I48.0",
+    "diagnosisdescription": "Paroxysmal Atrial Fibrillation",
+    "diagnosisclass": "Confirmed Secondary",
+    "matched_criteria": ["AF0004"],
+    "action": "Add",
+    "justification": {
+      "AF0004": "The patient has an AF episode lasting <7 days, typically self-terminating, as indicated by the primary diagnosis of I48 Atrial fibrillation and flutter."
+    }
+  },
+  {
+    "diagnosiscode": "I10",
+    "diagnosisdescription": "Hypertension",
+    "diagnosisclass": "Confirmed Primary",
+    "matched_criteria": ["BPHYP0001"],
+    "action": "Add",
+    "justification": {
+      "BPHYP0001": "The patient's office systolic blood pressure is 141 mmHg, which meets the threshold of >= 140 mmHg for hypertension."
+    }
+  },
+  {
+    "diagnosiscode": "I10-I16",
+    "diagnosisdescription": "Hypertensive diseases",
+    "diagnosisclass": "Confirmed Secondary",
+    "matched_criteria": [],
+    "action": "Remove",
+    "justification": {
+      "BPHYP0001": "The patient's office systolic blood pressure is 141 mmHg, which meets the threshold of >= 140 mmHg for hypertension, but the specific diagnosis of I10 (Hypertension) is more appropriate and specific than the broad category I10-I16 (Hypertensive diseases)."
+    }
+  }
+]

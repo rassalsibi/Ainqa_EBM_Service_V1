@@ -1,0 +1,87 @@
+{
+  "PatientDemographic": {
+    "name": "Amelia Anderson",
+    "gender": "Female",
+    "age": "72",
+    "patientid": "2025H01771"
+  },
+  "Vitals": {
+    "BMI - Kg/m2": "22",
+    "BSA - m2": "1",
+    "Diastolic": "95 mmHg",
+    "Height - Cm": "163 Centimetre",
+    "O2 Saturation": "98 Percentage",
+    "Pulse": "120 Minutes",
+    "Respiratory": "19 Minutes",
+    "Systolic": "158 mmHg",
+    "Weight - Kilogram": "61 Kilogram",
+    "Temperature": "36.2 Fahrenheit"
+  },
+  "Allergy": [],
+  "ChiefComplaints": [
+    {
+      "chiefcomplaints": "Fatigue",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "duration": "Since 7 days"
+    },
+    {
+      "chiefcomplaints": "Dizziness",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "duration": "Since 7 days"
+    }
+  ],
+  "Diagnosis": {
+    "Primary": [
+      {
+        "diagnosis": "I50.9 Heart Failure",
+        "verification": "Confirmed",
+        "duration": "Since 5 years"
+      },
+      {
+        "diagnosis": "I63.9 Cerebral infarction, Unspecified",
+        "verification": "Confirmed",
+        "duration": "Since 2 years"
+      }
+    ]
+  },
+  "LaboratoryOrder": {},
+  "RadiologyOrder": {
+    "06-02-2024": {
+      "RAD-002 ECG ": [
+        {
+          "PR": " ",
+          "QRS": "narrow",
+          "QRSd": " ",
+          "QT": " ",
+          "QTc": " ",
+          "Rate": "130 bpm",
+          "T": " ",
+          "P": "No P waves and replaced by fibrillatory (f) waves",
+          "rhythm": "Irregularly irregular rhythm, No P waves"
+        }
+      ]
+    }
+  },
+  "MedicationOrder": [
+    "Aspirin 150 mg",
+    "Losartan",
+    "Telmisartan",
+    "Carvedilol",
+    "Bisoprolol",
+    "Apixaban"
+  ],
+  "Documentation": [
+    "Patient with a known history of heart failure (HFrEF) and prior ischemic stroke presents with dizziness, fatigue, and occasional palpitations over the past few days. No chest pain or syncope. Reduced exercise tolerance and generalized weakness. Standard 12-lead ECG recording performed."
+  ],
+  "ObservationOrders": [],
+  "ProcedureCode": [],
+  "OtherInvestigationOrders": [],
+  "History": {},
+  "Progress Notes": []
+}

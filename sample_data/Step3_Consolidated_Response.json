@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "afStage": {
+      "stage": "Paroxysmal Atrial Fibrillation",
+      "evidence": "Diagnosis of Paroxysmal Atrial Fibrillation in patient data"
+    },
+    "cha2ds2VaScore": {
+      "score": "Unknown",
+      "keyContributingFactors": [],
+      "riskLevel": "Unknown"
+    },
+    "Summary_and_Clinical_Considerations": [],
+    "missingData": [],
+    "recommendations": []
+  },
+  "diagnoses": [],
+  "radiologyOrders": [
+    {
+      "orderCodeDescription": "93306 - Transthoracic echocardiogram",
+      "purpose": "Evaluate cardiac structure and function"
+    }
+  ],
+  "laboratoryOrders": [
+    {
+      "orderCodeDescription": "83540 - D-dimer",
+      "purpose": "Assess thromboembolic risk"
+    }
+  ],
+  "medications": [
+    {
+      "orderCodeDescription": "NDC 0002-4113-10 - Apixaban 5mg",
+      "doseFrequency": "5mg twice daily",
+      "purpose": "Anticoagulation"
+    }
+  ]
+}

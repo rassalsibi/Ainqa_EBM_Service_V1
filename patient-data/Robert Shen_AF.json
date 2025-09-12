@@ -1,0 +1,75 @@
+{
+  "PatientDemographic": {
+    "name": "Robert shen",
+    "gender": "MALE",
+    "age": "68 Years",
+    "patientid": ""
+  },
+  "Vitals": {
+    "BMI - Kg/m2": "27 ",
+    "BSA - m2": "2 ",
+    "Diastolic": "95 mmHg",
+    "Height - Cm": "190 Centimetre",
+    "O2 Saturation": "98 Percentage",
+    "Pulse": "110 Minutes",
+    "Respiratory": "24 Minutes",
+    "Systolic": "150 mmHg",
+    "Temperature": "37.2 Fahrenheit",
+    "Weight - Kilogram": "100 Kilogram"
+  },
+  "Allergy": [],
+  "ChiefComplaints": [
+    {
+      "chiefcomplaints": "Palpitation",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "duration": "Since 7 days",
+      "remarks": ""
+    },
+    {
+      "chiefcomplaints": "Shortness of Breath",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "duration": "Since 7 days",
+      "remarks": ""
+    }
+  ],
+  "Diagnosis": {
+    "Primary": [
+      {
+        "diagnosis": "E11.9 - Type 2 diabetes mellitus without complications",
+        "verification": "Confirmed",
+        "duration": " 2 years"
+      }
+    ]
+  },
+  "LaboratoryOrder": {},
+  "RadiologyOrder": {
+    "06-02-2024": {
+      "RAD-002 ECG ": [
+        {
+          "PR": "",
+          "QRS": "narrow",
+          "QRSd": "",
+          "QT": "",
+          "QTc": "",
+          "Rate": "",
+          "T": "",
+          "P": "No P waves and replaced by fibrillatory (f) waves",
+          "Rhythm": "Irregularly Irregular rhythm"
+        }
+      ]
+    }
+  },
+  "MedicationOrder": ["51002567 Metformin 500mg OD 30 Days"],
+  "Documentation": [
+    "The patient is a known case of Type 2 Diabetes Mellitus, presenting with shortness of breath, palpitations, and fatigue for the past 7 days. Denies chest pain or syncope. No recent infections or medication changes. Reports poor exercise tolerance and intermittent dizziness and done the standard 12-lead ECG recording"
+  ],
+  "ObservationOrders": "",
+  "ProcedureCode": [],
+  "OtherInvestigationOrders": [],
+  "History": {},
+  "Progress Notes": []
+}

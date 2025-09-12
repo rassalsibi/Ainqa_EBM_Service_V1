@@ -1,0 +1,89 @@
+{
+  "AtrialFibrillation": {
+    "summary": {
+      "afStage": {
+        "stage": "Paroxysmal Atrial Fibrillation",
+        "evidence": "Diagnosis of Paroxysmal Atrial Fibrillation in patient data",
+        "reference": "Table 1: Recommendations for the diagnosis of AF"
+      },
+      "cha2ds2VaScore": {
+        "score": "Unknown",
+        "keyContributingFactors": [],
+        "riskLevel": "Unknown",
+        "reference": "Table 10: Updated definitions for the CHA₂DS₂-VA score"
+      },
+      "Summary_and_Clinical_Considerations": [
+        {
+          "summary": "78-year-old male patient with Paroxysmal Atrial Fibrillation, systolic blood pressure 141 mmHg, diastolic blood pressure 64 mmHg, pulse 71 minutes, haemoglobin 14 g/dL, and total cholesterol 3.7 mmol/L",
+          "clinicalConsiderations": [
+            "The patient's diagnosis of Paroxysmal Atrial Fibrillation requires further evaluation and management to prevent stroke and thromboembolism"
+          ]
+        }
+      ],
+      "missingData": [
+        {
+          "data": "ECG results",
+          "actionableOrder": "Order an electrocardiogram (ECG) to confirm the diagnosis of AF"
+        },
+        {
+          "data": "CHA₂DS₂-VA score components (e.g., congestive heart failure, hypertension, age, diabetes, stroke, vascular disease, sex category)",
+          "actionableOrder": "Gather patient history and perform physical examination to assess CHA₂DS₂-VA score components"
+        }
+      ],
+      "recommendations": [
+        {
+          "section": "Immediate Considerations",
+          "items": [
+            "Confirm the diagnosis of AF with an electrocardiogram (ECG)"
+          ],
+          "reference": "Table 1: Recommendations for the diagnosis of AF"
+        },
+        {
+          "section": "Further Evaluation Needed",
+          "items": [
+            "Assess CHA₂DS₂-VA score components to determine stroke risk"
+          ],
+          "reference": "Table 10: Updated definitions for the CHA₂DS₂-VA score"
+        },
+        {
+          "section": "Long Term Management",
+          "items": [
+            "Consider anticoagulation therapy to prevent stroke and thromboembolism"
+          ],
+          "reference": "Table 20: Recommendations for anticoagulation in patients undergoing catheter"
+        }
+      ]
+    },
+    "radiologyOrders": [
+      {
+        "orderCodeDescription": "93306 - Transthoracic echocardiogram",
+        "purpose": "Evaluate cardiac structure and function to guide treatment decisions",
+        "evidence": "Patient diagnosed with Paroxysmal Atrial Fibrillation",
+        "reference": "Table 3: Recommendations for diagnostic evaluation in patients with new AF"
+      }
+    ],
+    "laboratoryOrders": [
+      {
+        "orderCodeDescription": "83540 - D-dimer",
+        "purpose": "Assess thromboembolic risk",
+        "evidence": "Patient diagnosed with Paroxysmal Atrial Fibrillation",
+        "reference": "Table 20: Recommendations for anticoagulation in patients undergoing catheter"
+      },
+      {
+        "orderCodeDescription": "84443 - Creatinine",
+        "purpose": "Assess renal function to guide anticoagulation therapy",
+        "evidence": "Patient diagnosed with Paroxysmal Atrial Fibrillation",
+        "reference": "Table 20: Recommendations for anticoagulation in patients undergoing catheter"
+      }
+    ],
+    "medications": [
+      {
+        "orderCodeDescription": "NDC 0002-4113-10 - Apixaban 5mg",
+        "doseFrequency": "5mg twice daily",
+        "purpose": "Anticoagulation to prevent stroke and thromboembolism",
+        "evidence": "Patient diagnosed with Paroxysmal Atrial Fibrillation and elevated thromboembolic risk",
+        "reference": "Table 20: Recommendations for anticoagulation in patients undergoing catheter"
+      }
+    ]
+  }
+}

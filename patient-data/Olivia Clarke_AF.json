@@ -1,0 +1,115 @@
+{
+  "PatientDemographic": {
+    "name": "Olivia Clarke",
+    "gender": "Female",
+    "age": "80",
+    "patientid": "2025H01779"
+  },
+  "Vitals": {
+    "BMI - Kg/m2": "27.1",
+    "BSA - m2": "1.81",
+    "Diastolic": "90 mmHg",
+    "Height - Cm": "163 Centimetre",
+    "O2 Saturation": "97 Percentage",
+    "Pulse": "120 Minutes",
+    "Respiratory": "25 Minutes",
+    "Systolic": "145 mmHg",
+    "Temperature": "97.16 Fahrenheit",
+    "Weight - Kilogram": "72 Kilogram"
+  },
+  "Allergy": [
+    {
+      "allergy": "Grass pollen",
+      "type": "",
+      "severity": "",
+      "verification": "",
+      "reactions": []
+    },
+    {
+      "allergy": "Weed Pollen",
+      "type": "",
+      "severity": "",
+      "verification": "",
+      "reactions": []
+    }
+  ],
+  "ChiefComplaints": [
+    {
+      "chiefcomplaints": "Syncope",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "Duration": "7 days"
+    },
+    {
+      "chiefcomplaints": "Chest pain",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "Duration": "7 days"
+    },
+    {
+      "chiefcomplaints": "Palpitation",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "Duration": "7 days"
+    },
+    {
+      "chiefcomplaints": "Fatigue",
+      "bodysite": "Chest",
+      "severity": "Mild",
+      "verification": "Confirmed",
+      "remarks": "",
+      "Duration": "7 days"
+    }
+  ],
+  "Diagnosis": {
+    "Admission": [
+      {
+        "diagnosis": "E11.9 Type 2 Diabetes mellitus",
+        "verification": "Confirmed",
+        "Duration": "2 years"
+      },
+      {
+        "diagnosis": "N18.9 - Chronic Kidney disease",
+        "verification": "",
+        "Duration": ""
+      }
+    ]
+  },
+  "LaboratoryOrder": {},
+  "RadiologyOrder": {
+    "06-02-2024": {
+      "RAD-002 ECG ": [
+        {
+          "PR": "Not specified",
+          "QRS": "Not specified",
+          "QRSd_ms": "90",
+          "QT": "Not specified",
+          "QTc": "Not specified",
+          "Rate": "",
+          "T": "",
+          "P_Waves": "Absent, replaced by fibrillatory (f) waves",
+          "Rhythm": "Irregularly irregular rhythm"
+        }
+      ]
+    }
+  },
+  "History": {},
+  "MedicationOrder": [
+    "Metformin 500 mg BID",
+    "Nitroglycerin (sublingual) 0.4 mg PRN",
+    "Furosemide 20 mg daily"
+  ],
+  "Documentation": [
+    "The patient is a known case of type 2 diabetes mellitus and stage 3 chronic kidney disease, presenting with chest pain, palpitations, and irregular heartbeat. The chest pain is described as mild to moderate, intermittent, and associated with exertion. The patient reports episodes of palpitations, dizziness, and mild shortness of breath."
+  ],
+  "ObservationOrders": [],
+  "ProcedureCode": [],
+  "OtherInvestigationOrders": [],
+  "Progress Notes": []
+}
