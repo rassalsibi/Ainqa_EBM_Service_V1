@@ -1,4 +1,4 @@
-// services/chatStream.ts
+import { systemPrompt } from "@/prompts/generateDiagnosis";
 import { e2eLLM } from "@/services/llm";
 
 interface ChatStreamOptions {
@@ -11,8 +11,7 @@ export async function chatStream({ context, message }: ChatStreamOptions) {
     messages: [
       {
         role: "system",
-        content:
-          "You are a clinical decision support assistant. Use the given patient data and matches to answer the question clearly and precisely.",
+        content: systemPrompt,
       },
       {
         role: "user",
