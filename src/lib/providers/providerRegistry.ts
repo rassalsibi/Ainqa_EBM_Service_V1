@@ -50,8 +50,8 @@ export const DEFAULT_MODELS = {
   // LLM Models (E2E is default/primary)
   llm: {
     primary: {
-      provider: "google" as const,
-      modelId: "gemini-2.5-flash",
+      provider: "deepinfra" as const,
+      modelId: "moonshotai/Kimi-K2-Instruct-0905",
     },
     fallback: {
       provider: "deepinfra" as const,

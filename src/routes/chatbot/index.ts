@@ -1,8 +1,6 @@
-import { promises as fs } from "fs";
 import { Hono } from "hono";
-import path from "path";
-import { chatStream } from "@/services/chatStream";
-import { formatPayload } from "@/services/payloadStringify";
+import { prompt } from "@/services/chatStreamPromptFunction";
+import { e2eLLM } from "@/services/llm";
 
 const chatbot = new Hono();
 
@@ -12,39 +10,40 @@ chatbot.get("/test", (c) =>
 
 chatbot.post("/query", async (c) => {
   try {
-    const body = await c.req.json<{ message: string }>();
-    const userMessage = body.message;
+    const {
+      userMessage,
+      patientDataRaw,
+      potentialDiagnosisRaw,
+      recommendationsRaw,
+    }: {
+      userMessage: string;
+      patientDataRaw: object | string;
+      potentialDiagnosisRaw: object | object[];
+      recommendationsRaw: object | object[];
+    } = await c.req.json();
 
     if (!userMessage) {
       return c.json({ success: false, error: "User message is required" }, 400);
     }
 
-    const patientDataPath = path.join(
-      process.cwd(),
-      "patient-data/Amelia Anderson_AF.json",
-    );
-    const possibleDiagnosisPath = path.join(
-      process.cwd(),
-      "sample_data/Step1_Confirmed_Diagnoses.json",
-    );
+    const patientData = JSON.stringify(patientDataRaw);
+    const possibleDiagnosis = JSON.stringify(potentialDiagnosisRaw);
+    const recommendations = JSON.stringify(recommendationsRaw);
 
-    const patientDataRaw = await fs.readFile(patientDataPath, "utf-8");
-    const possibleDiagnosisRaw = await fs.readFile(
-      possibleDiagnosisPath,
-      "utf-8",
-    );
-
-    const patientData = JSON.parse(patientDataRaw);
-    const possibleDiagnosis = JSON.parse(possibleDiagnosisRaw);
-
-    const context = await formatPayload({
-      patient_data: patientData,
-      possible_diagnosis: possibleDiagnosis,
-      recommendations: [],
+    const systemPrompt = prompt({
+      userMessage,
+      patientDataString: patientData,
+      potentialDiagnosisString: possibleDiagnosis,
+      recommendationsString: recommendations,
     });
-    const text = await chatStream({ context, message: userMessage });
 
-    return c.json({ success: true, text });
+    const streamResult = await e2eLLM.streamText({
+      system: systemPrompt,
+      messages: [{ role: "system", content: systemPrompt }],
+    });
+
+    // return a streaming response
+    return streamResult.toTextStreamResponse();
   } catch (error: any) {
     return c.json({ success: false, error: error.message }, 400);
   }

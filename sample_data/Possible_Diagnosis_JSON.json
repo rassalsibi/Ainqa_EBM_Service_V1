@@ -1,0 +1,110 @@
+{
+  "diagnoses": [
+    {
+      "diagnosiscode": "I48.91",
+      "diagnosisdescription": "Unspecified atrial fibrillation",
+      "diagnosisclass": "Confirmed Primary",
+      "confidence_score": 0.87,
+      "matched_criteria": ["GRAPH_001", "GRAPH_002", "GRAPH_003", "GRAPH_004"],
+      "action": "Add",
+      "justification": {
+        "GRAPH_001": "Chest pain suggests AF in 55-year-old male with cardiac history.",
+        "GRAPH_002": "Palpitations align with AF presentation in patient with cardiac symptoms.",
+        "GRAPH_003": "12-lead ECG used to diagnose AF in patient with cardiac symptoms.",
+        "GRAPH_004": "Absent P waves on ECG confirm AF diagnosis."
+      },
+      "graph_evidence": {
+        "GRAPH_001": {
+          "path": "Chest pain → MAY_INDICATE → Unspecified atrial fibrillation",
+          "graph_nodes": ["QWilQx7O", "aPyDkssM"],
+          "medical_references": {
+            "QWilQx7O": "Section 6: Symptoms attributable to AF, Figure 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "QWilQx7O_MAY_INDICATE_aPyDkssM": "Section 6: Symptoms attributable to AF"
+          }
+        },
+        "GRAPH_002": {
+          "path": "Palpitations → MAY_INDICATE → Unspecified atrial fibrillation",
+          "graph_nodes": ["kJes_OXj", "aPyDkssM"],
+          "medical_references": {
+            "kJes_OXj": "Section 6: Symptoms attributable to AF, Figure 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "kJes_OXj_MAY_INDICATE_aPyDkssM": "Section 6: Symptoms attributable to AF"
+          }
+        },
+        "GRAPH_003": {
+          "path": "12-lead ECG → USED_TO_DIAGNOSE → Unspecified atrial fibrillation",
+          "graph_nodes": ["nJJ4CWhR", "aPyDkssM"],
+          "medical_references": {
+            "nJJ4CWhR": "Section 5: Diagnostic criteria for AF, Recommendation Table 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "nJJ4CWhR_USED_TO_DIAGNOSE_aPyDkssM": "Recommendation Table 1: Recommendations for the diagnosis of AF"
+          }
+        },
+        "GRAPH_004": {
+          "path": "12-lead ECG → REVEALS → Absent P waves → CONFIRMS → Unspecified atrial fibrillation",
+          "graph_nodes": ["nJJ4CWhR", "9CXbMvDM", "aPyDkssM"],
+          "medical_references": {
+            "nJJ4CWhR": "Section 5: Diagnostic criteria for AF, Recommendation Table 1",
+            "9CXbMvDM": "Section 4: Definition and classification of AF",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "9CXbMvDM_CONFIRMS_aPyDkssM": "Section 4: Definition and classification of AF"
+          }
+        }
+      }
+    },
+    {
+      "diagnosiscode": "I48.3",
+      "diagnosisdescription": "Typical atrial flutter",
+      "diagnosisclass": "Confirmed Primary",
+      "confidence_score": 0.87,
+      "matched_criteria": ["GRAPH_001", "GRAPH_002", "GRAPH_003", "GRAPH_004"],
+      "action": "Add",
+      "justification": {
+        "GRAPH_001": "Chest pain suggests typical atrial flutter in 55-year-old male with cardiac history.",
+        "GRAPH_002": "Palpitations align with typical atrial flutter presentation in patient with cardiac symptoms.",
+        "GRAPH_003": "12-lead ECG used to diagnose typical atrial flutter in patient with cardiac symptoms.",
+        "GRAPH_004": "Absent P waves on ECG confirm typical atrial flutter diagnosis."
+      },
+      "graph_evidence": {
+        "GRAPH_001": {
+          "path": "Chest pain → MAY_INDICATE → Unspecified atrial fibrillation",
+          "graph_nodes": ["QWilQx7O", "aPyDkssM"],
+          "medical_references": {
+            "QWilQx7O": "Section 6: Symptoms attributable to AF, Figure 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "QWilQx7O_MAY_INDICATE_aPyDkssM": "Section 6: Symptoms attributable to AF"
+          }
+        },
+        "GRAPH_002": {
+          "path": "Palpitations → MAY_INDICATE → Unspecified atrial fibrillation",
+          "graph_nodes": ["kJes_OXj", "aPyDkssM"],
+          "medical_references": {
+            "kJes_OXj": "Section 6: Symptoms attributable to AF, Figure 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "kJes_OXj_MAY_INDICATE_aPyDkssM": "Section 6: Symptoms attributable to AF"
+          }
+        },
+        "GRAPH_003": {
+          "path": "12-lead ECG → USED_TO_DIAGNOSE → Unspecified atrial fibrillation",
+          "graph_nodes": ["nJJ4CWhR", "aPyDkssM"],
+          "medical_references": {
+            "nJJ4CWhR": "Section 5: Diagnostic criteria for AF, Recommendation Table 1",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "nJJ4CWhR_USED_TO_DIAGNOSE_aPyDkssM": "Recommendation Table 1: Recommendations for the diagnosis of AF"
+          }
+        },
+        "GRAPH_004": {
+          "path": "12-lead ECG → REVEALS → Absent P waves → CONFIRMS → Unspecified atrial fibrillation",
+          "graph_nodes": ["nJJ4CWhR", "9CXbMvDM", "aPyDkssM"],
+          "medical_references": {
+            "nJJ4CWhR": "Section 5: Diagnostic criteria for AF, Recommendation Table 1",
+            "9CXbMvDM": "Section 4: Definition and classification of AF",
+            "aPyDkssM": "Section 4: Definition and classification of AF, Section 5: Diagnostic criteria for AF",
+            "9CXbMvDM_CONFIRMS_aPyDkssM": "Section 4: Definition and classification of AF"
+          }
+        }
+      }
+    }
+  ]
+}
