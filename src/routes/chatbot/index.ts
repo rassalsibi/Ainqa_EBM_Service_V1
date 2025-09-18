@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { prompt } from "@/services/chatStreamPromptFunction";
+import { prompt } from "@/prompts/chatStreamPromptFunction";
 import { e2eLLM } from "@/services/llm";
 
 const chatbot = new Hono();
@@ -11,19 +11,22 @@ chatbot.get("/test", (c) =>
 chatbot.post("/query", async (c) => {
   try {
     const {
-      userMessage,
+      messages,
       patientDataRaw,
       potentialDiagnosisRaw,
       recommendationsRaw,
     }: {
-      userMessage: string;
+      messages: Array<{ role: string; content: string; parts?: any[] }>;
       patientDataRaw: object | string;
       potentialDiagnosisRaw: object | object[];
       recommendationsRaw: object | object[];
     } = await c.req.json();
 
-    if (!userMessage) {
-      return c.json({ success: false, error: "User message is required" }, 400);
+    if (!messages || !Array.isArray(messages)) {
+      return c.json(
+        { success: false, error: "Messages array is required" },
+        400,
+      );
     }
 
     const patientData = JSON.stringify(patientDataRaw);
@@ -31,7 +34,7 @@ chatbot.post("/query", async (c) => {
     const recommendations = JSON.stringify(recommendationsRaw);
 
     const systemPrompt = prompt({
-      userMessage,
+      messages,
       patientDataString: patientData,
       potentialDiagnosisString: possibleDiagnosis,
       recommendationsString: recommendations,
